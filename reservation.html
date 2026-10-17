@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Réservation en ligne — Glamista, bar à ongles Casablanca</title>
+<meta name="description" content="Réservez votre soin ongles, cils ou sourcils chez Glamista en ligne, confirmation sur WhatsApp.">
+<meta name="theme-color" content="#F6F4F0">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Dancing+Script:wght@600;700&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+<header class="header">
+<div class="wrap">
+<a class="brand" href="index.html" aria-label="Glamista, bar à ongles, accueil"><b>Glamista</b><small>Bar à ongles</small></a>
+<nav class="nav" id="nav" aria-label="Navigation principale">
+<a href="index.html">Accueil</a>
+<a href="prestations.html">Prestations</a>
+<a href="galerie.html">Galerie</a>
+<a href="reservation.html" aria-current="page">Réservation</a>
+<a href="contact.html">Contact</a>
+<a class="btn btn-ink" href="reservation.html">Réserver</a>
+</nav>
+<a class="btn btn-ink" href="reservation.html">Réserver</a>
+<button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+</div>
+</header>
+<section class="pagehead"><span class="eyebrow">Glamista · Bar à ongles</span><h1>Réservation</h1><p class="lead">Choisissez vos soins, votre créneau et envoyez votre demande. Nous la confirmons sur WhatsApp.</p></section>
+<main>
+<section class="wrap section book" id="booking">
+<div class="form">
+<div class="panel"><div class="ph-h"><span class="n">1</span><h2>Vos prestations</h2><small id="sel-count"></small></div>
+<div class="tabs" id="tabs" role="group" aria-label="Catégorie"></div>
+<div class="svc-opts" id="svc-list" tabindex="-1"></div>
+<p class="note" style="margin-top:12px">Vous pouvez combiner plusieurs soins (ex. ongles + cils).</p></div>
+<div class="panel"><div class="ph-h"><span class="n">2</span><h2>Avec qui ?</h2></div><div class="pros" id="pro-list"></div></div>
+<div class="panel"><div class="ph-h"><span class="n">3</span><h2>Jour &amp; heure</h2></div>
+<div class="days" id="day-list" tabindex="-1" role="group" aria-label="Jours"></div>
+<div class="slots" id="slot-list" tabindex="-1" role="group" aria-label="Créneaux"></div></div>
+<div class="panel"><div class="ph-h"><span class="n">4</span><h2>Vos coordonnées</h2></div>
+<div class="fields">
+<label>Prénom et nom<input type="text" id="fname" autocomplete="name" placeholder="Votre nom"></label>
+<label>Téléphone<input type="tel" id="fphone" autocomplete="tel" inputmode="tel" placeholder="06 00 00 00 00"></label>
+<label class="full">Une précision ? (facultatif)<textarea id="fnote" rows="3" placeholder="Ex. : forme amande, couleur nude, je vous envoie une photo d'inspiration…"></textarea></label>
+</div></div>
+</div>
+<aside aria-label="Récapitulatif">
+<span class="eyebrow">Récapitulatif</span>
+<div class="recap">
+<div><span>Soins</span><span id="r-svc"></span></div>
+<div><span>Durée</span><span id="r-dur"></span></div>
+<div><span>Avec</span><span id="r-pro"></span></div>
+<div><span>Date</span><span id="r-date"></span></div>
+</div>
+<a class="btn btn-ink" id="send" href="#" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 8 19.4z"></path><path d="M9 9.5c.3 1.8 1.7 3.6 3.6 4.4l1-1 1.8.8-.3 1.4c-2.7.3-6.4-2.6-6.9-5.6l1.4-.4.8 1.8z"></path></svg> Envoyer ma demande</a>
+<p class="note" id="hint" aria-live="polite"></p>
+<p class="note">Votre rendez-vous est confirmé après notre réponse. En cas d'empêchement, merci de prévenir 24h à l'avance.</p>
+</aside>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap cols">
+<div><a class="brand" href="index.html" aria-label="Glamista, accueil"><b>Glamista</b><small>Bar à ongles · Casablanca</small></a><p style="margin-top:10px">Ongles · Cils · Sourcils</p></div>
+<div><h3>Adresse</h3><span>Résidence Évasion Square</span><span>Entrée A, porte 14</span><span>Bd Abou Bakr Al Kadiri, Sidi Maârouf</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Residence+Evasion+Square+Boulevard+Abou+Bakr+Al+Kadiri+Sidi+Maarouf+Casablanca" target="_blank" rel="noopener">Itinéraire →</a></div>
+<div><h3>Horaires</h3><span>Mardi – [JOUR] : 10h30 – 20h30</span><span>Lundi : fermé</span></div>
+<div><h3>Contact</h3><a href="#" data-wa="Bonjour Glamista !">Réservation WhatsApp</a><a href="reservation.html">Réservation en ligne</a><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram [@COMPTE]</a></div>
+</div>
+<div class="wrap copy">© 2026 Glamista · Bar à ongles · Casablanca</div>
+</footer>
+</body>
+</html>
